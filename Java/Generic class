@@ -1,0 +1,48 @@
+class GenericClass <T> 
+
+{
+
+T obj; 
+
+GenericClass(T obj)
+
+{
+
+  this.obj = obj;
+
+}
+
+public T getOb()
+
+{
+
+  return obj;
+
+}
+
+}
+
+class Main
+
+{
+
+public static void main (String[] args)
+
+{
+
+GenericClass< Integer> iob = new GenericClass<Integer>(10); 
+
+  int  x = iob.getOb();
+
+  System.out.println(x);
+
+  GenericClass< String> sob = new GenericClass<String>("Hello");  
+
+  String str = sob.getOb();
+
+  System.out.println(str);
+
+}
+
+}
+
