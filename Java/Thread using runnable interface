@@ -1,0 +1,58 @@
+   import java.util.*;
+
+    public class Multi implements Runnable
+
+    {  
+
+        Scanner sc=new Scanner(System.in);
+
+        
+
+    public void run()
+
+    {  
+
+        int num=sc.nextInt();
+
+       if(num>0)  
+
+{  
+
+System.out.println("The number is positive.");  
+
+}  
+
+ 
+
+else if(num<0)  
+
+{  
+
+System.out.println("The number is negative.");  
+
+}  
+
+
+
+else  
+
+{  
+
+System.out.println("The number is zero.");  
+
+}  
+
+    }  
+
+    public static void main(String args[]){  
+
+    Multi m1=new Multi(); 
+
+    Thread t1 =new Thread(m1); 
+
+    t1.start();  
+
+     }  
+
+    }  
+
